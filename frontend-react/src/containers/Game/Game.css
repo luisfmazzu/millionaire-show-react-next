@@ -1,0 +1,148 @@
+section.game.background {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(1, 38, 181, 0.1), rgba(0, 0, 0, 0.8)),
+    linear-gradient(152deg, rgba(4, 5, 52, 1) 35%, rgba(1, 38, 181, 1) 50%, rgba(4, 5, 52, 1) 65%);
+  position: relative;
+}
+
+section.game.background .timer-question {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #b0110b;
+  color: #b0110b;
+  font-size: 2.5rem;
+  padding: 0.2rem 2rem;
+  z-index: 1000;
+  font-weight: 700;
+  cursor: default;
+}
+
+section.game .game-control {
+  min-height: 100vh;
+  text-align: center;
+}
+section.game .game-control .contador-questions {
+  cursor: default;
+}
+section.game .game-control .contador-questions > p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+section.game .game-control .question,
+section.game .game-control .alternativa {
+  background: linear-gradient(
+      to bottom,
+      rgba(96, 12, 2, 0.5),
+      rgba(146, 25, 8, 0.4),
+      rgba(221, 71, 20, 0.3)
+    ),
+    linear-gradient(45deg, #600c02 24%, #921908 44%, #dd4714 56%, #921908 76%, #600c02 100%);
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 0.2rem;
+  color: #e4e4e4;
+  cursor: default;
+  align-items: center;
+}
+
+section.game .game-control .question {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 1.5rem auto 1rem auto;
+}
+
+section.game .game-control .question > p {
+  font-weight: 500;
+}
+
+section.game .game-control .alternativa {
+  position: relative;
+  font-size: 1.2rem;
+  max-width: 550px;
+  margin: 1rem auto;
+  height: auto;
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+}
+section.game .game-control .alternativa.correct.highlight {
+  background: #24d201;
+}
+section.game .game-control .alternativa.wrong.highlight {
+  background: #ff2c1d;
+}
+section.game .game-control .alternativa.selected {
+  background: #6b6a79;
+}
+section.game .game-control .alternativa:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    linear-gradient(45deg, #600c02 24%, #921908 44%, #dd4714 56%, #921908 76%, #600c02 100%);
+}
+section.game .game-control .alternativa.selected:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    linear-gradient(45deg, #4c4b59 24%, #8a859b 44%, #b6afd2 56%, #7b7892 76%, #3f404b 100%);
+}
+
+section.game .game-control .alternativa .numero-alternativa {
+  left: 10px;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  transform: translateY(-10px);
+  padding: 3px;
+  color: #010336;
+  font-weight: 700;
+  border: 2px solid #010336;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+section.game .game-control .opcoes {
+  max-width: 160px;
+  display: inline;
+}
+section.game .game-control .opcoes .opcao {
+  margin: 0.4rem 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 100px;
+  background-color: #e1e1e1;
+  color: #111;
+  padding: 0.2rem 1.5rem;
+  font-size: 1.2rem;
+  min-width: 100px;
+}
+section.game .game-control .opcoes .opcao:hover {
+  background-color: #888;
+}
+
+section.game .game-control .projecoes {
+  max-width: 160px;
+  margin: 0.4rem 2rem;
+  font-weight: 700;
+  display: inline-block;
+  cursor: default;
+}
+
+section.game .game-control .projecoes .valor {
+  border-radius: 5px;
+  background-color: #fae316;
+  color: #b0110b;
+  padding: 0.2rem 0.5rem;
+  font-size: 2rem;
+  min-width: 100px;
+}
+section.game .game-control .projecoes .opcao {
+  color: #fff;
+  margin-top: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
